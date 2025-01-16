@@ -1,0 +1,41 @@
+{
+    "name": "@jetpinpin/angular-eslint-config",
+    "version": "19.0.3",
+    "description": "Angular eslint shared configuration",
+    "main": "dist/index.js",
+    "exports": {
+        ".": {
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.js"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "build": "bun run esbuild.config.ts",
+        "lint": "prettier --check .",
+        "format": "prettier --write ."
+    },
+    "prettier": "@jetpinpin/prettier-config",
+    "devDependencies": {
+        "@jetpinpin/prettier-config": "^1.0.0",
+        "@types/bun": "latest",
+        "@types/eslint-config-prettier": "^6.11.3",
+        "esbuild": "^0.24.2",
+        "prettier": "^3.4.2"
+    },
+    "dependencies": {
+        "eslint-config-prettier": "^10.0.1",
+        "eslint-plugin-prettier": "^5.2.2"
+    },
+    "peerDependencies": {
+        "eslint": "^9.0.0",
+        "typescript": "^5.0.0",
+        "angular-eslint": "^19.0.0",
+        "typescript-eslint": "^8.0.0"
+    }
+}

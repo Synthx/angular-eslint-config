@@ -1,0 +1,2 @@
+[install.scopes]
+"@jetpinpin" = { token = "$NPM_TOKEN" }
