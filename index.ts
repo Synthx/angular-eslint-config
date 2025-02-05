@@ -64,7 +64,6 @@ const config = (prefix = 'app') =>
                         ignoreRestSiblings: true,
                     },
                 ],
-                '@typescript-eslint/promise-function-async': 'error',
                 '@typescript-eslint/strict-boolean-expressions': 'off',
                 'array-bracket-spacing': 'off',
                 'arrow-parens': ['off', 'always'],
